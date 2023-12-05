@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Rafting Adventures</title>
+    <link rel="stylesheet" href="./styles/contact.css">
+</head>
+
+<body>
+    <!-- Common Header -->
+    <header>
+        <!-- Header content here -->
+        <nav>
+            <!-- Navigation content here -->
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Company Information -->
+        <section class="company-info">
+            <h2>Company Information</h2>
+            <p>Address: Hilltop street 10A</p>
+            <p>Phone: +233247753704</p>
+            <p>Email: info@yazgacraftingcompany.com</p>
+            <!-- Embedded Google Map -->
+            <div class="google-map">
+                <!-- Embed your Google Map iframe here -->
+            </div>
+        </section>
+
+        <!-- Employee Profile Images -->
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <!-- Employee 1 -->
+            <div class="employee">
+                <img src="images/employee1.jpg" alt="Employee 1">
+                <p>Mathew Smith Abakah - Founder</p>
+            </div>
+            <!-- Employee 2 -->
+            <div class="employee">
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <p>Joseph Yalley - Manager</p>
+            </div>
+            <!-- Employee 3 -->
+            <div class="employee">
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <p>Zenobia Aku Lavoe - Secretary</p>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label>Purpose of Message:</label>
+                <input type="radio" id="general" name="purpose" value="General Inquiry" checked>
+                <label for="general">General Inquiry</label>
+                
+                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                <label for="reservation">Reservation Question</label>
+                
+                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                <label for="suggestion">Website Suggestion</label>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Common Footer -->
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+</body>
+
+</html>
