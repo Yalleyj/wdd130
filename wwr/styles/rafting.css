@@ -88,6 +88,7 @@ header {
   justify-content: space-between;
   padding: 20px;
   background-color: #f8f8f8; /* Change background color as needed */
+  
 }
 
 .logo-nav {
@@ -113,5 +114,16 @@ nav a {
   /* Additional styles for links */
 }
 
-/* Apply styles to headings and paragraphs */
-/* ... (Your existing CSS for headings and paragraphs) */
+.adventure-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust size as needed */
+  grid-gap: 10px; /* Adjust gap between images */
+}
+
+.adventure-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Add border radius for a consistent appearance */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  /* Additional styling for images goes here */
+}
