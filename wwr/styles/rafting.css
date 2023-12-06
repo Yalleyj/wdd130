@@ -1,5 +1,5 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Your+Selected+Font:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* Define CSS variables */
 :root {
@@ -126,4 +126,4 @@ nav a {
   border-radius: 8px; /* Add border radius for a consistent appearance */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
   /* Additional styling for images goes here */
-}
+} 
