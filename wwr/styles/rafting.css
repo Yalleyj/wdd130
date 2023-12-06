@@ -97,8 +97,8 @@ header {
 }
 
 .logo-nav img {
-  height: 50px; /* Adjust height as needed */
-  margin-right: 10px; /* Add spacing between logo and text */
+  height: 25px; /* Adjust height as needed */
+  margin-right: 5px; /* Add spacing between logo and text */
 }
 
 /* Style navigation links */
@@ -121,7 +121,7 @@ nav a {
 }
 
 .adventure-images img {
-  width: 100%;
+  width: 50%;
   height: auto;
   border-radius: 8px; /* Add border radius for a consistent appearance */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
