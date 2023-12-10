@@ -1,112 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Contact Information for Yazgac Rafting Company ">
-    <meta name="author" content="Joseph Yalley">
-    <title>Contact Us Yazgac Rafting Company</title>
-    <link rel="stylesheet" href="./styles/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&family=Lobster&display=swap">
+    <style>
+        form {
+  /* Places the form in the centre of the page */
+  margin: 250px auto;
+  width: 400px;
+  /* Outlines the form */
+  padding: 1em;
+  border: 1px solid #CF3628 ;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Ensures Uniformity and Alignment*/
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #f0c808;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top; 
+
+  height: 5em;  /* Ensures space to type some text */
+}
+
+.button {
+  /* Puts buttons in line with their respective textx 
+  and ensures same size as their label elements*/
+  padding-left: 90px; 
+}
+
+button {
+  /*Margin creates equal space as those between the 
+  labels and their text fields */
+  margin-left: 0.5em;
+}
+
+#feedback {
+    background-color: #f7f7f9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* elements is made invisible until user is ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+    </style>
 </head>
-
 <body>
-    <h1>YAZGAC RAFTING COMPANY</h1>
-    <header>
-        <!-- Header content here -->
-        <nav>
-            <!-- Navigation content here -->
-        </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Company Information -->
-        <section class="company-info">
-            <h2>Company Information</h2>
-            <p>Address: Hilltop street 10A</p>
-            <p>Phone: +233247753704</p>
-            <p>Email: info@yazgacraftingcompany.com</p>
-            <!-- Embedded Google Map -->
-            <div class="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12671.327626091267!2d-1.6377877!3d4.9868194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwNTknMTIuMiJOIDHCsDEzJzIuMSJF!5e0!3m2!1sen!2sus!4v1619795656289!5m2!1sen!2sus"></iframe>
-
-
-
-            </div>
-        </section>
-
-        <!-- Employee Profile Images -->
-        <section class="employee-profiles">
-            <h2>Meet Our Team</h2>
-            <!-- Employee 1 -->
-            <div class="employee">
-                <img src="images/employee1.jpg" alt="Employee 1">
-                <p>Mathew Smith Abakah - Founder</p>
-            </div>
-            <!-- Employee 2 -->
-            <div class="employee">
-                <img src="images/employee2.jpg" alt="Employee 2">
-                <p>Joseph Yalley - Manager</p>
-            </div>
-            <!-- Employee 3 -->
-            <div class="employee">
-                <img src="images/employee3.jpg" alt="Employee 3">
-                <p>Zenobia Aku Lavoe - Secretary</p>
-            </div>
-            <div class="employee">
-                <img src="images/employee3.jpg" alt="Employee 3">
-                <p>Zenobia Aku Lavoe - Secretary</p>
-            </div>
-            <div class="employee">
-                <img src="images/employee3.jpg" alt="Employee 3">
-                <p>Zenobia Aku Lavoe - Secretary</p>
-            </div>
-            <div class="employee">
-                <img src="images/employee3.jpg" alt="Employee 3">
-                <p>Zenobia Aku Lavoe - Secretary</p>
-            </div>
-            <div class="employee">
-                <img src="images/employee3.jpg" alt="Employee 3">
-                <p>Zenobia Aku Lavoe - Secretary</p>
-            </div>
-        </section>
-
-        <!-- Contact Form -->
-        <section class="contact-form">
-            <h2>Contact Us</h2>
+    <div id="content"> 
+        <header>
+            <a id="logo_link" href="index.html">
+                <img src="images/logo.jpg" alt="Logo" class="logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="page-2-wifreframe.html">Page 2</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+        <div id="hero">
+        </div>
+        <main>
+            <div id="feedback"></div>
             <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label>Purpose of Message:</label>
-                <input type="radio" id="general" name="purpose" value="General Inquiry" checked>
-                <label for="general">General Inquiry</label>
-                
-                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-                <label for="reservation">Reservation Question</label>
-                
-                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-                <label for="suggestion">Website Suggestion</label>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
-                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-                
-                <button type="submit" class="submit-btn">Submit</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- Common Footer -->
-    <footer>
-        <!-- Footer content here -->
-    </footer>
+                <ul>
+                  <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" />
+                  </li>
+                  <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" required placeholder="email@here.com"/>
+                  </li>
+                  <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                  </li>
+                  <li class="button">
+                    <button type="submit">Send your message</button>
+                  </li>
+                </ul>
+              </form>
+            
+          
+        </main>
+        <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById('feedback');
+            // get the form so we can read what was entered in it.
+            const formElement = document.forms[0];
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener('submit', function(e) {
+                // stop the form from doing the default action.
+                e.preventDefault();
+                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                // make the feedback element visible.
+                feedbackElement.style.display = "block";
+                // add a class to move everything down so our message doesn't cover it.
+                document.body.classList.toggle('moveDown');
+            });
+        </script>
+        <footer>
+            <p>Yazgac 2023 - Joseph Yalley</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
-
 </html>
