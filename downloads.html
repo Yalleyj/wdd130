@@ -2,13 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Download Link</title>
-  <link rel="stylesheet" href="./styles/downloads.css">
+  <title>Professional Site</title>
+  <link rel="stylesheet" href="styles/downloads.css">
+  <link rel="stylesheet" href="styles/upload.css">
+  <!-- You can add more CSS files if needed -->
 </head>
 <body>
-  <div class="download-section">
-    <h2>Download File</h2>
-    <a class="download-link" href="./pdf/ama.pdf" download>Download Image</a>
-  </div>
+  <header>
+    <!-- Include a navigation menu or any header content -->
+  </header>
+
+  <main>
+    <div class="download-section">
+      <h2>Download File</h2>
+      <a class="download-link" href="./pdf/ama.pdf" download>Download Image</a>
+    </div>
+
+    <div class="upload-section">
+      <h2>Upload File</h2>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <label for="file-upload" class="custom-file-upload">
+          <input type="file" id="file-upload" name="file-upload" />
+          Choose File
+        </label>
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <!-- Include footer content or any additional information -->
+  </footer>
 </body>
 </html>
